@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const Menu = () => (
+const Menu = ({ menuLinks }) => (
   <div
     style={{
       background: `#f4f4f4`,
@@ -15,16 +15,11 @@ const Menu = () => (
         justifyContent: `space-evenly`,
       }}
     >
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-      <li>
-        <Link to="/blog">Blog</Link>
-      </li>
-      <li></li>
+      {menuLinks.map(({ name, link }) => (
+        <li key={name}>
+          <Link to={link}>{name}</Link>
+        </li>
+      ))}
     </ul>
   </div>
 )

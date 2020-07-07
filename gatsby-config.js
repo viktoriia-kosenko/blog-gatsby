@@ -3,6 +3,25 @@ module.exports = {
     title: `Blog app`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@Vicky`,
+
+    menuLinks: [
+      {
+        name: `Home`,
+        link: `/`,
+      },
+      {
+        name: `About`,
+        link: `/about`,
+      },
+      {
+        name: `Blog`,
+        link: `/blog`,
+      },
+      {
+        name: `New`,
+        link: `/new`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
