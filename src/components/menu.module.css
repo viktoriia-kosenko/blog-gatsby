@@ -1,0 +1,7 @@
+.back {
+  background: #f4f4f4;
+  padding-top: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}

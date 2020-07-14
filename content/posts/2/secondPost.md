@@ -1,6 +1,9 @@
 ---
-title: "Second Post"
-date: "2020-07-03"
+title: 'Second Post'
+date: '2020-07-03'
+url: 'https://img2.pngio.com/redux-react-npm-state-management-png-573x572px-redux-area-redux-png-290_290.jpg'
+subject: ['redux']
+featimg: 'redux.png'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat. Aliquam venenatis est lorem, vel tempor lacus lobortis id.

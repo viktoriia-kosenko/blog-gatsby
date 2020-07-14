@@ -1,27 +1,15 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
+import menuStyles from './menu.module.css'
 
 const Menu = ({ menuLinks }) => (
-  <div
-    style={{
-      background: `#f4f4f4`,
-      paddingTop: `10px`,
-    }}
-  >
-    <ul
-      style={{
-        listStyle: `none`,
-        display: `flex`,
-        justifyContent: `space-evenly`,
-      }}
-    >
-      {menuLinks.map(({ name, link }) => (
-        <li key={name}>
-          <Link to={link}>{name}</Link>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <ul className={menuStyles.back}>
+    {menuLinks.map(({ name, link }) => (
+      <li key={name}>
+        <Link to={link}>{name}</Link>
+      </li>
+    ))}
+  </ul>
 )
 
 export default Menu
